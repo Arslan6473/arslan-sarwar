@@ -13,7 +13,7 @@ const portfolioProjects = [
     year: "2025",
     title: "An AI-driven Tool Designed to Help Educators",
     results: [
-      { title: "Integate both images and text models." },
+      { title: "Integate both image and text models." },
       { title: "Cloud storage for users to upload files." },
       { title: "Personas for consistent tone of content." },
     ],
