@@ -24,7 +24,7 @@ const testimonials = [
   {
     name: "Daniel White",
     position: "CEO @ InnovateCo",
-    text: "Arslan&#39;s ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    text: "Arslan's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
     avatar: memojiAvatar3,
   },
   {
@@ -36,7 +36,7 @@ const testimonials = [
   {
     name: "Michael Brown",
     position: "Director of IT @ MegaCorp",
-    text: "Arslan&#39;s work on our website has been nothing short of exceptional. He&#39;s a talented developer who is also a great communicator. We highly recommend him.",
+    text: "Arslan's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
     avatar: memojiAvatar5,
   },
 ];
