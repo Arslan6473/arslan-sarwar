@@ -78,7 +78,7 @@ export const HeroSection = () => {
     active:scale-95"
         >
           <span>👋</span>
-          <span>Let's Connect</span>
+          <span>Let&#39;s Connect</span>
         </button>
       </div>
     </div>
