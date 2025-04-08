@@ -39,16 +39,16 @@ export const ContactSection = () => {
             }}
           ></div>
           <div className="flex flex-col items-start gap-2 text-center relative z-10">
-            <h2 className="font-serif text-left text-2xl md:text-3xl">
+          <h2 className="font-serif text-2xl md:text-3xl">
               Let's create something amazing together{" "}
             </h2>
-            <p className="text-sm mt-2 md:text-base text-left">
+            <p className="text-sm mt-2 md:text-base">
               Ready to bring your next project life? Let's connect and discuss
               how I can help you achieve your goals.
             </p>
 
-            <div className="flex items-center bg-white/80 mt-2 px-4 py-3 rounded-xl shadow-sm">
-              <span className="font-medium text-sm md:text-base mr-3">{email}</span>
+            <div className="flex items-center bg-white/50 mt-2 px-4 py-3 rounded-xl shadow-md">
+              <span className="font-medium text-gray-900 text-sm md:text-base mr-3">{email}</span>
 
               <button
                 onClick={copyToClipboard}
