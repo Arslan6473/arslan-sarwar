@@ -13,9 +13,9 @@ const portfolioProjects = [
     year: "2025",
     title: "An AI-driven Tool Designed to Help Educators",
     results: [
-      { title: "Integate both image and text models." },
-      { title: "Cloud storage for users to upload files." },
-      { title: "Personas for consistent tone of content." },
+      { title: "Integrated multimodal capabilities with both image and text-based AI models." },
+      { title: "Implemented secure cloud storage to allow users to upload and manage files." },
+      { title: "Created customizable personas to ensure consistent tone and voice in generated content." },
     ],
     link: "https://clasy.io",
     image: clasy,
@@ -25,9 +25,9 @@ const portfolioProjects = [
     year: "2023",
     title: "An E-commerce Platform",
     results: [
-      { title: "Worked cart and product listing pages." },
-      { title: "Backend apis to create orders and save cart details." },
-      { title: "Develope about us page." },
+      { title: "Developed dynamic cart and product listing pages with responsive UI/UX." },
+      { title: "Built backend APIs for order creation and persistent cart storage." },
+      { title: "Designed and developed a comprehensive 'About Us' page to enhance brand story." },
     ],
     link: "https://arboristsupply.ca",
     image: arboristsupply,
@@ -35,16 +35,17 @@ const portfolioProjects = [
   {
     company: "Findmyvenue",
     year: "2024",
-    title: "Venues Search Platform",
+    title: "Venue Search Platform",
     results: [
-      { title: "Integrate map functionallity to list venues on map." },
-      { title: "Worked on my favourite feature." },
-      { title: "Worked on filters." },
+      { title: "Integrated interactive map functionality to display venues with location data." },
+      { title: "Implemented 'My Favourites' feature to let users save and revisit preferred venues." },
+      { title: "Built robust filtering options to improve user search experience." },
     ],
     link: "https://findmyvenue.com",
     image: findmyvenue,
   },
 ];
+
 
 export const ProjectsSection = () => {
   return <section id="projects" className="pb-16 lg:py-24">

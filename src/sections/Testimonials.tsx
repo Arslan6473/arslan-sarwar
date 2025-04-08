@@ -12,34 +12,35 @@ const testimonials = [
   {
     name: "Alex Turner",
     position: "Marketing Manager @ TechStartups",
-    text: "Arslan was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    text: "Arslan was instrumental in transforming our website into a powerful marketing tool. His attention to detail and understanding of full-stack development made a huge impact. We're thrilled with the results!",
     avatar: memojiAvatar1,
   },
   {
     name: "Olivia Green",
     position: "Head of Design @ GreenLeaf",
-    text: "Working with Arslan was a pleasure. His expertise in full stack development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    text: "Working with Arslan was a pleasure. His expertise as a full-stack developer brought our designs to life in ways we never imagined. The final product exceeded our expectations.",
     avatar: memojiAvatar2,
   },
   {
     name: "Daniel White",
     position: "CEO @ InnovateCo",
-    text: "Arslan's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    text: "Arslan's ability to create seamless full-stack solutions and engaging user experiences is unmatched. Our website has seen a significant boost in conversions since launch.",
     avatar: memojiAvatar3,
   },
   {
     name: "Emily Carter",
     position: "Product Manager @ GlobalTech",
-    text: "Arslan is a true full satck wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
+    text: "Arslan is a true full-stack wizard. He took our complex product and transformed it into an intuitive, high-performing interface. We've received amazing feedback from users.",
     avatar: memojiAvatar4,
   },
   {
     name: "Michael Brown",
     position: "Director of IT @ MegaCorp",
-    text: "Arslan's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
+    text: "Arslan's full-stack expertise has been invaluable. He’s not only a talented developer but also a great communicator. We highly recommend working with him.",
     avatar: memojiAvatar5,
   },
 ];
+
 
 export const TestimonialsSection = () => {
   return (
