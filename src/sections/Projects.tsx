@@ -15,7 +15,6 @@ const portfolioProjects = [
     results: [
       { title: "Integrated multimodal capabilities with both image and text-based AI models." },
       { title: "Implemented secure cloud storage to allow users to upload and manage files." },
-      { title: "Created customizable personas to ensure consistent tone and voice in generated content." },
     ],
     link: "https://clasy.io",
     image: clasy,
@@ -27,7 +26,6 @@ const portfolioProjects = [
     results: [
       { title: "Developed dynamic cart and product listing pages with responsive UI/UX." },
       { title: "Built backend APIs for order creation and persistent cart storage." },
-      { title: "Designed and developed a comprehensive 'About Us' page to enhance brand story." },
     ],
     link: "https://arboristsupply.ca",
     image: arboristsupply,
@@ -38,7 +36,6 @@ const portfolioProjects = [
     title: "Venue Search Platform",
     results: [
       { title: "Integrated interactive map functionality to display venues with location data." },
-      { title: "Implemented 'My Favourites' feature to let users save and revisit preferred venues." },
       { title: "Built robust filtering options to improve user search experience." },
     ],
     link: "https://findmyvenue.com",
