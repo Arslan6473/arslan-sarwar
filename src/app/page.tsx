@@ -14,7 +14,7 @@ export default function Home() {
       <HeroSection/>
       <ProjectsSection/>
       <TapeSection/>
-      <TestimonialsSection/>
+     
       <AboutSection/>
       <ContactSection/>
       <Footer/>

@@ -1,6 +1,7 @@
 import clasy from "@/assets/images/clasy.png";
-import arboristsupply from "@/assets/images/arboristsupply.png";
+import freshbox from "@/assets/images/freshbox.png";
 import findmyvenue from "@/assets/images/findmyvenue.png";
+import undiscoverable from "@/assets/images/undiscoverable.png";
 import CheckBoxIcon from "@/assets/icons/check-circle.svg"
 import ArrowUp from "@/assets/icons/arrow-up-right.svg"
 
@@ -20,15 +21,26 @@ const portfolioProjects = [
     image: clasy,
   },
   {
-    company: "Arboristsupply",
-    year: "2023",
-    title: "An E-commerce Platform",
+    company: "Freshbox Pro",
+    year: "2025",
+    title: "Laundry Service Platform",
     results: [
-      { title: "Developed dynamic cart and product listing pages with responsive UI/UX." },
-      { title: "Built backend APIs for order creation and persistent cart storage." },
+      { title: "Implemented an order management feature that allows users to create and track their laundry service orders." },
+      { title: "Implemented a real-time chat feature that enables communication between customers and delivery riders." },
     ],
-    link: "https://arboristsupply.ca",
-    image: arboristsupply,
+    link: "https://freshbox-frontend.netlify.app/",
+    image: freshbox,
+  },
+   {
+    company: "Undiscovered",
+    year: "2025",
+    title: "Players Recruitment Platform",
+    results: [
+      { title: "Implemented an events feature allowing users to view and stay updated on upcoming events." },
+      { title: "Restructured codebase to improve load times and significantly boost overall platform performance." },
+    ],
+    link: "https://undiscoveredhoops.com",
+    image: undiscoverable,
   },
   {
     company: "Findmyvenue",
