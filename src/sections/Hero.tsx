@@ -6,14 +6,26 @@ import grainImage from "@/assets/images/grain.jpg"
 import StartIcon from "@/assets/icons/star.svg"
 import HeroOrbit from "@/components/HeroOrbit";
 import SparkalIcon from "@/assets/icons/sparkle.svg";
+import { motion, useReducedMotion } from "framer-motion";
+import { Fragment } from "react";
+
+const titleWords = ["Building", "Exceptional", "Full", "Stack", "Projects"];
 
 export const HeroSection = () => {
+  const shouldReduceMotion = useReducedMotion();
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const fadeUp = (delay: number) => ({
+    initial: shouldReduceMotion
+      ? { opacity: 1, y: 0 }
+      : { opacity: 0, y: 24 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.7, delay, ease: [0.21, 0.47, 0.32, 0.98] },
+  });
   return <div id="home" className="py-32 md:48 lg:py-68 relative z-0 overflow-x-clip">
     <div className="absolute inset-0 pointer-events-none [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
 
@@ -42,27 +54,58 @@ export const HeroSection = () => {
     </div>
     <div className="container">
       <div className="flex flex-col justify-center items-center">
-        <Image src={memoji} className="size-[100px]" alt="Hero" />
-        <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 rounded-lg inline-flex items-center gap-4 ">
+        <motion.div
+          animate={shouldReduceMotion ? undefined : { y: [0, -10, 0] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <Image src={memoji} className="size-[100px]" alt="Hero" />
+        </motion.div>
+        <motion.div {...fadeUp(0.1)} className="bg-gray-950 border border-gray-800 px-4 py-1.5 rounded-lg inline-flex items-center gap-4 ">
           <div className="bg-green-500 size-2.5 rounded-full relative">
             <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full "></div>
           </div>
-          <div className="text-sm font-medium">Avaliable for new projects</div>
-        </div>
+          <div className="text-sm font-medium">Available for new projects</div>
+        </motion.div>
       </div>
       <div className="max-w-lg mx-auto">
-        <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-tight">Bulding Exceptional Full Stack Projects</h1>
-        <p className="mt-4 text-center md:text-lg text-white/60">
+        <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-tight">
+          {titleWords.map((word, wordIndex) => (
+            <Fragment key={word}>
+            <motion.span
+              className={`inline-block ${
+                word === "Exceptional"
+                  ? "bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text"
+                  : ""
+              }`}
+              initial={
+                shouldReduceMotion
+                  ? { opacity: 1 }
+                  : { opacity: 0, y: 24, filter: "blur(8px)" }
+              }
+              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+              transition={{
+                duration: 0.6,
+                delay: 0.25 + wordIndex * 0.12,
+                ease: [0.21, 0.47, 0.32, 0.98],
+              }}
+            >
+              {word}
+            </motion.span>
+            {wordIndex < titleWords.length - 1 ? " " : ""}
+            </Fragment>
+          ))}
+        </h1>
+        <motion.p {...fadeUp(0.9)} className="mt-4 text-center md:text-lg text-white/60">
           I specialize in building high-performance web applications with Next.js, React.js, Node.js, and modern web technologies.
-        </p>
+        </motion.p>
       </div>
-      <div className="flex flex-col md:flex-row md:justify-center items-center mt-8 gap-4">
+      <motion.div {...fadeUp(1.1)} className="flex flex-col md:flex-row md:justify-center items-center mt-8 gap-4">
         <button
           onClick={() => scrollToSection("projects")}
-          className="inline-flex items-center cursor-pointer gap-2 border border-white/15 px-6 h-12 rounded-xl 
-    transition-all duration-300 ease-in-out 
-    hover:bg-white/10 
-    hover:border-white/30 
+          className="inline-flex items-center cursor-pointer gap-2 border border-white/15 px-6 h-12 rounded-xl
+    transition-all duration-300 ease-in-out
+    hover:bg-white/10
+    hover:border-white/30
     active:scale-95"
         >
           <span className="font-semibold">Explore My Work</span>
@@ -71,16 +114,16 @@ export const HeroSection = () => {
 
         <button
           onClick={() => window.open("https://www.linkedin.com/in/arslan-sarwar64/", "_blank")}
-          className="inline-flex font-semibold cursor-pointer items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl 
-    transition-all duration-300 ease-in-out 
-    hover:bg-white/90 
-    hover:shadow-lg 
+          className="inline-flex font-semibold cursor-pointer items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl
+    transition-all duration-300 ease-in-out
+    hover:bg-white/90
+    hover:shadow-lg
     active:scale-95"
         >
           <span>👋</span>
           <span>Let's Connect</span>
         </button>
-      </div>
+      </motion.div>
     </div>
   </div>;
 };

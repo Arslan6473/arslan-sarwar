@@ -29,8 +29,17 @@ const config: Config = {
         "ping-large": "ping-large 1s ease-in-out infinite",
         "move-left": "move-left 1s linear infinite",
         "move-right": "move-right 1s linear infinite",
+        "gradient-shift": "gradient-shift 8s ease-in-out infinite",
       },
       keyframes: {
+        "gradient-shift": {
+          "0%, 100%": {
+            backgroundPosition: "0% 50%",
+          },
+          "50%": {
+            backgroundPosition: "100% 50%",
+          },
+        },
         "ping-large": {
           "75%, 100%": {
             transform: "scale(3)",
